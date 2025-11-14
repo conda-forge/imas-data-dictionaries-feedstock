@@ -9,8 +9,6 @@ package:
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | split("-") | join("_") }}-${{ version }}.tar.gz
   sha256: cd183648bb0ff8caf5ea145fcbbaca5d9165ddabac45ca4e703c0087f35f34d6
-  patches:
-    - remove-setuptools-scm.patch
 
 build:
   number: 0
